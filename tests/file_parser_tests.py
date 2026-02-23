@@ -1,4 +1,4 @@
-from file_parser import FileParser
+from app.file_parser import FileParser
 
 # Change this to a real file inside your sources folder
 test_file = "sources/0fd16b59-0b48-4607-9f6a-ec46a952f5f6.txt"

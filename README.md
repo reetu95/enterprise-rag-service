@@ -24,7 +24,7 @@ The system is designed to be modular and production-ready, with clear separation
 
 ## 🏗 System Architecture
 
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram](design/architecture.png)
 
 ### Architecture Explanation
 
@@ -113,3 +113,24 @@ This separation allows horizontal scaling and better observability in real-world
 ---
 
 ## 📂 Project Structure
+
+```
+enterprise-rag-service/
+│
+├── app/                  # Core application logic
+│   ├── main.py           # FastAPI entrypoint
+│   ├── file_parser.py    # Document parsing + OCR
+│   ├── chunker.py        # Text chunking logic
+│   ├── database.py       # Storage helpers
+│
+├── tests/                # Unit tests
+│
+├── design/               # Architecture diagram
+│   └── architecture.png
+│
+├── vector_store.py       # Embedding + Chroma logic
+├── docker-compose.yml    # Container config
+├── requirements.txt      # Dependencies
+├── api_tests.sh          # API test script
+└── README.md
+```
